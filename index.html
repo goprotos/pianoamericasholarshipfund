@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piano America National Scholarship Fund — For Piano Teachers</title>
+<meta name="description" content="Ten percent of every piano your families buy through Piano America goes into a scholarship fund in your studio's name, awarded to your own students. No commissions, no selling, no cost.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+  :root { --ink: #0B0A09; --ink-2: #121010; --cream: #F4F1E8; --cream-ink: #14120F; --cream-2: #4A443A; --cream-3: #6B6457; --line: #DFD8C7; --gold: #C9922E; --gold-ink: #8A6A1F; --gold-hi: #E3B557; --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Jost', system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--cream-ink); font-family: var(--sans); line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-ink); }
+  .dark .eyebrow { color: var(--gold); }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+  h1 { font-size: 64px; line-height: 1.04; }
+  h2 { font-size: 48px; line-height: 1.08; margin-top: 16px; }
+  h3 { font-size: 26px; line-height: 1.2; }
+  .lead { font-size: 19px; line-height: 1.65; color: var(--cream-2); margin: 20px 0 0; }
+  .dark .lead { color: rgba(244,241,232,.74); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: var(--ink); background: var(--gold); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; padding: 16px 30px; border-radius: 2px; font-weight: 500; transition: background .25s; border: 0; cursor: pointer; font-family: var(--sans); }
+  .btn:hover { background: var(--gold-hi); }
+  .btn.outline { background: transparent; color: var(--cream-ink); border: 1px solid var(--cream-ink); }
+  .btn.outline:hover { background: var(--cream-ink); color: var(--cream); }
+  .dark .btn.outline { color: var(--cream); border-color: rgba(244,241,232,.5); }
+  .dark .btn.outline:hover { background: var(--cream); color: var(--ink); }
+  .section { padding: 110px 0; }
+  .dark { background: var(--ink); color: var(--cream); }
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* nav */
+  .nav { position: sticky; top: 0; z-index: 20; background: rgba(11,10,9,.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: var(--cream); border-bottom: 1px solid rgba(201,146,46,.25); }
+  .nav .wrap { display: flex; align-items: center; gap: 16px; height: 72px; }
+  .nav img { height: 48px; width: auto; }
+  .nav .brand { font-family: var(--serif); font-size: 20px; letter-spacing: .02em; }
+  .nav .brand small { display: block; font-family: var(--sans); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+  .nav .tel { margin-left: auto; color: var(--gold); font-size: 14px; letter-spacing: .06em; white-space: nowrap; }
+  .nav .btn { padding: 11px 20px; font-size: 12px; }
+
+  /* hero */
+  .hero { position: relative; background: var(--ink); color: var(--cream); overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; left: 45%; background: url('./img/hero-side.jpg') center 35% / cover no-repeat; opacity: .55; }
+  .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(11,10,9,1) 0%, rgba(11,10,9,.55) 40%, rgba(11,10,9,.15) 100%), linear-gradient(to top, rgba(11,10,9,.9), rgba(11,10,9,0) 50%); }
+  .hero .wrap { position: relative; z-index: 1; padding-top: 110px; padding-bottom: 110px; max-width: 1120px; }
+  .hero h1 { max-width: 760px; margin-top: 20px; }
+  .hero h1 em { font-style: italic; font-weight: 500; color: var(--gold); }
+  .hero .lead { max-width: 640px; color: rgba(244,241,232,.8); }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+  .hero .fine { margin-top: 26px; font-size: 14px; color: rgba(244,241,232,.55); }
+  .proof { display: flex; flex-wrap: wrap; gap: 0; margin-top: 56px; border-top: 1px solid rgba(201,146,46,.3); max-width: 760px; }
+  .proof div { flex: 1 1 180px; padding: 22px 24px 0 0; }
+  .proof b { display: block; font-family: var(--serif); font-size: 34px; font-weight: 600; line-height: 1; color: var(--gold); }
+  .proof span { display: block; margin-top: 8px; font-size: 13px; color: rgba(244,241,232,.65); line-height: 1.45; }
+
+  /* the question */
+  .quote { font-family: var(--serif); font-size: 36px; line-height: 1.25; font-weight: 500; font-style: italic; color: var(--cream-ink); }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+
+  /* steps */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 56px; }
+  .step { border-top: 1px solid rgba(201,146,46,.45); padding-top: 22px; }
+  .step .n { font-family: var(--serif); font-size: 44px; line-height: 1; color: var(--gold); }
+  .step h3 { margin-top: 14px; color: var(--cream); font-size: 23px; }
+  .step p { margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: rgba(244,241,232,.7); }
+
+  /* calculator */
+  .calc { background: #fff; border: 1px solid var(--line); border-radius: 3px; padding: 40px 44px; margin-top: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .calc label { display: block; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--cream-3); margin-bottom: 10px; }
+  .calc .field { margin-bottom: 30px; }
+  .calc .val { font-family: var(--serif); font-size: 34px; line-height: 1; margin-bottom: 12px; }
+  input[type=range] { width: 100%; accent-color: var(--gold); }
+  .calc .out { background: var(--cream); border-left: 3px solid var(--gold); padding: 28px 30px; }
+  .calc .out .big { font-family: var(--serif); font-size: 58px; line-height: 1; font-weight: 600; }
+  .calc .out .lbl { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-ink); margin-top: 8px; }
+  .calc .out .row { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 15px; margin-top: 4px; }
+  .calc .out .row:first-of-type { margin-top: 22px; }
+  .calc .out .row b { font-family: var(--serif); font-size: 20px; font-weight: 600; }
+
+  /* compare */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+  .compare .box { padding: 34px 36px; border-radius: 3px; }
+  .compare .box.a { background: #fff; border: 1px solid var(--line); }
+  .compare .box.b { background: var(--ink); color: var(--cream); border: 1px solid rgba(201,146,46,.45); }
+  .compare .box .t { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--cream-3); }
+  .compare .box.b .t { color: var(--gold); }
+  .compare .box h3 { margin-top: 10px; }
+  .compare ul { list-style: none; padding: 0; margin: 22px 0 0; }
+  .compare li { padding: 11px 0 11px 30px; border-top: 1px solid var(--line); position: relative; font-size: 15px; line-height: 1.5; color: var(--cream-2); }
+  .compare .box.b li { border-color: rgba(244,241,232,.12); color: rgba(244,241,232,.82); }
+  .compare li::before { content: '—'; position: absolute; left: 0; color: var(--cream-3); }
+  .compare .box.b li::before { content: '✓'; color: var(--gold); }
+
+  /* trust grid */
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px 40px; margin-top: 48px; }
+  .grid3 .rule { width: 26px; height: 1px; background: var(--gold); }
+  .grid3 h3 { font-size: 22px; margin-top: 14px; }
+  .grid3 p { margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: var(--cream-2); }
+  .dark .grid3 p { color: rgba(244,241,232,.66); }
+
+  /* studio page sample */
+  .sample { margin-top: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  .page { background: #fff; border: 1px solid var(--line); box-shadow: 0 30px 60px -30px rgba(0,0,0,.35); padding: 44px 40px; font-family: Georgia, serif; color: #111; text-align: center; position: relative; }
+  .page .tag { position: absolute; top: -14px; left: 24px; background: var(--gold); color: var(--ink); font-family: var(--sans); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; padding: 6px 12px; }
+  .page .brand { font-family: var(--sans); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: #5f5a53; }
+  .page .portrait { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #c8a24a; background: #f6f4f0; margin: 26px auto 18px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #9a938a; font-family: var(--sans); }
+  .page .name { font-size: 30px; margin: 0; }
+  .page .sub { font-family: var(--sans); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #5f5a53; margin: 6px 0 22px; }
+  .page .fund { background: #f6f4f0; border-top: 2px solid #c8a24a; border-bottom: 2px solid #c8a24a; padding: 18px 20px; font-size: 16px; line-height: 1.5; }
+  .page .fund i { color: #9c7c31; }
+  .page .voice { text-align: left; font-size: 14px; line-height: 1.6; margin: 22px 0; color: #222; }
+  .page .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .page .btns span { border: 2px solid #111; padding: 14px 10px; font-size: 13px; }
+  .page .btns small { display: block; font-family: var(--sans); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; opacity: .65; margin-top: 3px; }
+  .page .award { border: 2px solid #c8a24a; background: #f6f4f0; padding: 18px; margin-top: 22px; }
+  .page .award .l { font-family: var(--sans); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: #9c7c31; }
+  .page .award .n { font-size: 20px; margin-top: 6px; }
+  .page .award .s { font-size: 13px; color: #5f5a53; }
+
+  /* faq */
+  .faq { margin-top: 40px; border-top: 1px solid var(--line); }
+  .faq details { border-bottom: 1px solid var(--line); }
+  .faq summary { cursor: pointer; list-style: none; padding: 22px 0; font-family: var(--serif); font-size: 24px; font-weight: 600; display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; font-family: var(--sans); font-weight: 300; font-size: 28px; color: var(--gold-ink); flex: 0 0 auto; }
+  .faq details[open] summary::after { content: '–'; }
+  .faq .a { padding: 0 0 24px; font-size: 16px; line-height: 1.65; color: var(--cream-2); max-width: 720px; }
+
+  /* apply */
+  .apply { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+  form { background: #fff; border: 1px solid var(--line); border-radius: 3px; padding: 36px 38px; }
+  .f2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .field { margin-bottom: 16px; }
+  .field label { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--cream-3); margin-bottom: 7px; }
+  .field input, .field select, .field textarea { width: 100%; border: 1px solid var(--line); border-radius: 2px; padding: 13px 14px; font-family: var(--sans); font-size: 16px; color: var(--cream-ink); background: #fff; }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--gold); outline-offset: 0; border-color: var(--gold); }
+  form .btn { width: 100%; margin-top: 6px; }
+  form .fine { margin: 14px 0 0; font-size: 13px; color: var(--cream-3); line-height: 1.5; }
+  .contact { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .contact a { font-family: var(--serif); font-size: 30px; display: block; }
+  .contact span { font-size: 14px; color: var(--cream-3); }
+
+  footer { background: #060504; color: rgba(244,241,232,.55); padding: 48px 0; font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+  footer img { height: 56px; width: auto; }
+  footer .legal { margin-left: auto; font-size: 12px; color: rgba(244,241,232,.38); max-width: 460px; text-align: right; }
+
+  @media (max-width: 960px) {
+    .steps, .grid3 { grid-template-columns: 1fr 1fr; }
+    .cols, .calc, .compare, .sample, .apply { grid-template-columns: 1fr; }
+    .sample .page { order: 2; }
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    .section { padding: 72px 0; }
+    h1 { font-size: 42px; } h2 { font-size: 34px; }
+    .lead { font-size: 17px; }
+    .quote { font-size: 27px; }
+    #how p[style*='italic'] { font-size: 24px !important; margin-top: 44px !important; }
+    .hero .wrap { padding-top: 72px; padding-bottom: 72px; }
+    .hero-bg { left: 0; opacity: .3; }
+    .hero .actions .btn { width: 100%; }
+    .steps, .grid3, .f2 { grid-template-columns: 1fr; }
+    .calc { padding: 26px 22px; }
+    .calc .out .big { font-size: 46px; }
+    .compare .box { padding: 26px 22px; }
+    .nav .brand small, .nav .tel { display: none; }
+    .nav .btn { margin-left: auto; }
+    form { padding: 26px 22px; }
+    footer .legal { margin-left: 0; text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <img src="./img/badge.png" alt="Piano America">
+    <div class="brand">Piano America<small>National Scholarship Fund</small></div>
+    <a class="tel" href="tel:3043123608">(304) 312-3608</a>
+    <a class="btn" href="#apply">Start your studio's fund</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero dark">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow">For independent piano teachers</div>
+    <h1>Your students ask you where to buy a piano.<br>Now the answer <em>funds their future.</em></h1>
+    <p class="lead">Ten percent of every piano a family buys through your studio — a restored Yamaha or Kawai acoustic, or a new Kawai digital from an authorized national dealer — goes into a scholarship fund carrying your studio's name, awarded to one of your own students. You never sell anything, never handle money, and never pay a cent.</p>
+    <div class="actions">
+      <a class="btn" href="#apply">Start your studio's fund</a>
+      <a class="btn outline" href="#how">See how it works</a>
+    </div>
+    <p class="fine">Five minutes to set up. No contract, no exclusivity, no minimums.</p>
+    <div class="proof">
+      <div><b>10%</b><span>of every sale, into your studio's fund</span></div>
+      <div><b>$0</b><span>commission to you — the money goes to a student</span></div>
+      <div><b>$1,000</b><span>awarded at the student's high school awards night</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ THE QUESTION ============ -->
+<section class="section">
+  <div class="wrap cols">
+    <div class="reveal">
+      <div class="eyebrow">The question every teacher gets</div>
+      <p class="quote" style="margin-top: 18px">"We're ready to buy a real piano. Where should we go?"</p>
+    </div>
+    <div class="reveal">
+      <p class="lead" style="margin-top: 0">You get asked it a dozen times a year, and the honest answer has always been awkward. The local dealer who pressures families. The Craigslist upright with a cracked pinblock. The digital that gets outgrown in eighteen months. And if you do send a family somewhere good, the dealer makes the sale and you get a thank-you — at best.</p>
+      <p class="lead">You can't take a commission; it would compromise the recommendation, and you'd never want to. But the recommendation has real value. The Piano America National Scholarship Fund turns that value into something you'd be proud to put on your studio's wall.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section dark" id="how">
+  <div class="wrap">
+    <div class="narrow" style="text-align: center">
+      <div class="eyebrow reveal">How it works</div>
+      <h2 class="reveal">Four steps. One of them is yours.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><h3>Tell us about your studio</h3><p>Your name, your studio, your city, and a few lines about how you teach. Five minutes, on the form below.</p></div>
+      <div class="step reveal"><div class="n">2</div><h3>We build your studio page</h3><p>A page on pianoamerica.com in your name, with your photo, your words, and the fund named for your studio. We write it with you; you approve every line.</p></div>
+      <div class="step reveal"><div class="n">3</div><h3>Families buy through your page</h3><p>When a family asks, you send them to your page. They buy at the same published price as everyone else. Ten percent of that sale goes into your studio's fund the day the piano is delivered.</p></div>
+      <div class="step reveal"><div class="n">4</div><h3>You present the scholarship</h3><p>When the fund reaches $1,000, you choose the student. The award is presented in your studio's name at their high school awards ceremony, with Piano America there to hand you the check.</p></div>
+    </div>
+    <p class="reveal" style="margin: 64px auto 0; max-width: 760px; text-align: center; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 32px; line-height: 1.3; color: var(--gold)">The day you award that scholarship — you'll know exactly why you signed up.</p>
+  </div>
+</section>
+
+<!-- ============ THE MATH ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="narrow" style="text-align: center">
+      <div class="eyebrow reveal">The arithmetic</div>
+      <h2 class="reveal">Two pianos a year is a scholarship a year.</h2>
+      <p class="lead reveal">Move the sliders to your own studio. The fund never expires and never resets — it simply grows until it reaches the award.</p>
+    </div>
+    <div class="calc reveal">
+      <div>
+        <div class="field">
+          <label for="r-pianos">Pianos your families buy per year</label>
+          <div class="val" id="v-pianos">2</div>
+          <input type="range" id="r-pianos" min="1" max="12" value="2" step="1">
+        </div>
+        <div class="field">
+          <label for="r-price">Average piano price</label>
+          <div class="val" id="v-price">$5,500</div>
+          <input type="range" id="r-price" min="2500" max="12000" value="5500" step="250">
+        </div>
+        <p style="margin: 0; font-size: 14px; color: var(--cream-3); line-height: 1.55">Restored Yamaha and Kawai uprights run $5,000–$8,000; grands $8,000 and up; Kawai digitals from about $1,000. Every price is published on the site.</p>
+      </div>
+      <div class="out">
+        <div class="big" id="o-year">$1,100</div>
+        <div class="lbl">into your studio's fund each year</div>
+        <div class="row"><span>Per piano sold</span><b id="o-each">$550</b></div>
+        <div class="row"><span>First $1,000 award in</span><b id="o-first">about 11 months</b></div>
+        <div class="row"><span>Scholarships over five years</span><b id="o-five">5</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOT A COMMISSION ============ -->
+<section class="section" style="background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line)">
+  <div class="wrap">
+    <div class="narrow" style="text-align: center">
+      <div class="eyebrow reveal">Why this is different</div>
+      <h2 class="reveal">A commission changes the recommendation.<br>A scholarship doesn't.</h2>
+    </div>
+    <div class="compare">
+      <div class="box a reveal">
+        <div class="t">A dealer referral fee</div>
+        <h3>What you'd rather not explain</h3>
+        <ul>
+          <li>Money comes to you personally</li>
+          <li>Families can wonder whose side you're on</li>
+          <li>Sits uneasily with the MTNA Code of Ethics</li>
+          <li>Something to track, invoice, and report</li>
+          <li>Ends when the dealer decides it ends</li>
+        </ul>
+      </div>
+      <div class="box b reveal">
+        <div class="t">The Piano America Scholarship Fund</div>
+        <h3>What you'd put on the wall</h3>
+        <ul>
+          <li>Money never touches you — Piano America holds the fund and pays the student</li>
+          <li>Families see exactly where it goes: to a student in your studio</li>
+          <li>Nothing to invoice, report, or disclose — there is no payment to you</li>
+          <li>You choose the recipient, on your own criteria</li>
+          <li>The fund is yours for as long as you teach; it rolls over year to year</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT FAMILIES GET ============ -->
+<section class="section dark">
+  <div class="wrap">
+    <div class="narrow" style="text-align: center">
+      <div class="eyebrow reveal">What you're actually recommending</div>
+      <h2 class="reveal">Every piano recorded, all 88 keys, before anyone buys it.</h2>
+      <p class="lead reveal">Your name is going on this, so here is what stands behind it. Piano America sells two things. Restored Yamaha and Kawai acoustics from Japan, inspected in Wheeling against an 88-point standard and recorded key by key — the same scale and the same sixteen bars of Bach on every instrument, so a family can hear one against another. And, as an authorized Kawai dealer with national distribution, the full Kawai digital piano lineup — new, shipped free to any address in the country, at institutional pricing. That is the pricing schools and universities get, not the showroom sticker, which means your families get a better deal through your studio than from any other dealer you could send them to.</p>
+    </div>
+    <div class="grid3">
+      <div class="reveal"><div class="rule"></div><h3>The 88-Point Standard</h3><p>A Registered Piano Technician signs every inspection report by name. Families read it before they decide.</p></div>
+      <div class="reveal"><div class="rule"></div><h3>Every key on video</h3><p>All 88 keys and all three pedals, recorded on the actual instrument they would receive — never a stock clip.</p></div>
+      <div class="reveal"><div class="rule"></div><h3>Published prices</h3><p>Every price is on the website. Your families pay what everyone pays. No quote requests, no negotiation.</p></div>
+      <div class="reveal"><div class="rule"></div><h3>Ten-year warranty, delivered and tuned</h3><p>Parts and labor on every restored acoustic, delivery anywhere in the lower 48, and a technician visit for the first tuning once the piano has settled into the room.</p></div>
+      <div class="reveal"><div class="rule"></div><h3>Full Kawai digital lineup at institutional pricing</h3><p>Every new Kawai digital, from the ES120 to the Novus hybrids, shipped free anywhere in the US with Kawai's factory warranty — at the institutional price, not the retail one. Your students pay less than they would at another dealer, and the same 10% goes to your fund.</p></div>
+      <div class="reveal"><div class="rule"></div><h3>Trade-up guarantee</h3><p>The full purchase price as credit toward a larger piano when the student outgrows this one — which, with your teaching, they will.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDIO PAGE ============ -->
+<section class="section" id="page">
+  <div class="wrap sample">
+    <div class="reveal">
+      <div class="eyebrow">Your studio page</div>
+      <h2>Your name. Your words.<br>Your students' fund.</h2>
+      <p class="lead">Every participating studio gets its own page on pianoamerica.com. Your photo at your instrument, a few paragraphs in your own voice about how you teach and why you recommend us, and the fund named for your studio — with each year's recipient listed beneath it.</p>
+      <p class="lead">Families reach it from a link you give them, or a card we print for your waiting room. Nothing about it is a sales page. It's a page about you.</p>
+      <a class="btn" href="#apply" style="margin-top: 30px">Start your studio's fund</a>
+    </div>
+    <div class="page reveal">
+      <div class="tag">Sample</div>
+      <div class="brand">Piano <b>America</b></div>
+      <div class="portrait">Teacher photo</div>
+      <p class="name">Sarah Whitmore</p>
+      <p class="sub">Whitmore Piano Studio · Columbus, Ohio</p>
+      <div class="fund">Instruments purchased through this studio support the <i>Whitmore Studio Scholarship Fund</i>, awarded each year to one of our students.</div>
+      <p class="voice">I have taught in Columbus for nineteen years, and the question I am asked most is where a family should buy their first real piano. For a long time I did not have a good answer…</p>
+      <div class="btns"><span>Used Acoustic Pianos<small>Video of every instrument</small></span><span>New Kawai Digitals<small>Set up in your home</small></span></div>
+      <div class="award"><div class="l">2027 Recipient</div><div class="n">Student Name</div><div class="s">Their High School</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" style="background: #fff; border-top: 1px solid var(--line)">
+  <div class="wrap narrow">
+    <div class="eyebrow reveal">Questions teachers ask</div>
+    <h2 class="reveal">Before you say yes.</h2>
+    <div class="faq reveal">
+      <details><summary>Do I have to sell anything?</summary><div class="a">No. You answer the question you're already being asked, and point the family to your page. Piano America handles everything after that — the recording, the inspection report, delivery, tuning, warranty. Nobody from Piano America will ever contact your students or their parents unless they reach out to us.</div></details>
+      <details><summary>Who chooses the scholarship recipient?</summary><div class="a">You do. Merit, need, a student heading to a music program, a student who simply never missed a lesson — your criteria, your call. The only requirement is that the recipient is a current or former student of your studio. We'll help with a simple one-page letter if you want one.</div></details>
+      <details><summary>Where does the money actually sit?</summary><div class="a">Piano America holds every studio's fund in a dedicated scholarship account and reports your balance to you after every sale. The award is paid directly to the student's college or music program, or to the student at the ceremony — you decide which. The money never passes through you.</div></details>
+      <details><summary>What if my families only buy one piano a year?</summary><div class="a">The fund rolls over. One $5,500 piano puts $550 in; the next one tips it past $1,000 and triggers the award. Nothing expires, nothing resets, and there's no minimum to stay in the program.</div></details>
+      <details><summary>Does this conflict with the MTNA Code of Ethics?</summary><div class="a">The program was built so that it wouldn't. The Code's concern is a teacher receiving undisclosed personal gain from a recommendation. Here there is no personal gain — you receive nothing — and nothing is undisclosed, because the fund is printed on your studio page for every family to see. Many teachers still prefer to mention it to families up front, and we encourage that.</div></details>
+      <details><summary>Can I recommend other dealers too?</summary><div class="a">Of course. There's no exclusivity and no contract. If a family finds the right piano somewhere else, that's a good outcome for the student, and that's the point.</div></details>
+      <details><summary>What does it cost?</summary><div class="a">Nothing, ever. Not to join, not to stay, not for the studio page, not for the printed cards. The ten percent comes out of Piano America's side of the sale, not the family's — they pay the same published price as any other buyer.</div></details>
+      <details><summary>Who is Piano America?</summary><div class="a">Piano America LLC is based in Wheeling, West Virginia. It is an authorized Kawai dealer with national distribution of new Kawai digital pianos, and a dealer in restored Yamaha and Kawai acoustic pianos imported from Japan. The founders, Doug Hlad and Stanley Stazenski, have spent eleven years promoting piano sales for Kawai dealers around the country — more than $40 million of pianos — before building a dealership of their own around one idea: that a family should be able to hear and read everything about a piano before they buy it.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPLY ============ -->
+<section class="section" id="apply">
+  <div class="wrap apply">
+    <div class="reveal">
+      <div class="eyebrow">Start your studio's fund</div>
+      <h2>Five minutes now.<br>A scholarship in your name next spring.</h2>
+      <p class="lead">Tell us about your studio and Doug will call you within two business days to walk through the program, answer anything the page didn't, and start on your studio page. No pressure, no pitch — if it isn't right for your studio, you'll know in one conversation.</p>
+      <div class="contact">
+        <span>Rather talk first?</span>
+        <a href="tel:3043123608">(304) 312-3608</a>
+        <span>Doug Hlad, Piano America · Monday – Saturday</span>
+      </div>
+    </div>
+    <form class="reveal" action="https://formspree.io/f/mljbegzp" method="POST">
+      <div class="f2">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+        <div class="field"><label for="f-studio">Studio name</label><input id="f-studio" name="studio" type="text" placeholder="e.g. Whitmore Piano Studio"></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="f-city">City</label><input id="f-city" name="city" type="text" required autocomplete="address-level2"></div>
+        <div class="field"><label for="f-state">State</label><input id="f-state" name="state" type="text" required autocomplete="address-level1"></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="f-years">Years teaching</label><select id="f-years" name="years"><option>1–5</option><option>6–10</option><option selected>11–20</option><option>20+</option></select></div>
+        <div class="field"><label for="f-students">Students in your studio</label><select id="f-students" name="students"><option>Under 10</option><option selected>10–25</option><option>26–50</option><option>50+</option></select></div>
+      </div>
+      <div class="field"><label for="f-mtna">MTNA member?</label><select id="f-mtna" name="mtna"><option>Yes</option><option>No</option><option>Not sure</option></select></div>
+      <div class="field"><label for="f-note">Anything you'd like us to know</label><textarea id="f-note" name="note" rows="3" placeholder="How families usually find pianos now, questions, best time to call…"></textarea></div>
+      <input type="hidden" name="_subject" value="PANSF teacher application">
+      <button class="btn" type="submit">Start my studio's fund</button>
+      <p class="fine">We'll never share your information or contact your students. Submitting this form starts a conversation, not a commitment.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="./img/badge.png" alt="Piano America">
+    <div>Piano America LLC · 1315 Main Street, Wheeling, WV 26003<br><a href="tel:3043123608" style="color: var(--cream)">(304) 312-3608</a> · <a href="mailto:info@pianoamerica.com">info@pianoamerica.com</a></div>
+    <div class="legal">The Piano America National Scholarship Fund is administered by Piano America LLC. Scholarship awards are funded from Piano America's proceeds and paid to or on behalf of the student recipient; no payment of any kind is made to participating teachers. © 2026 Piano America LLC.</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var rp = document.getElementById('r-pianos'), rr = document.getElementById('r-price');
+  function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+  function calc() {
+    var n = +rp.value, p = +rr.value, each = p * 0.10, year = each * n;
+    document.getElementById('v-pianos').textContent = n;
+    document.getElementById('v-price').textContent = money(p);
+    document.getElementById('o-each').textContent = money(each);
+    document.getElementById('o-year').textContent = money(year);
+    var months = Math.ceil(1000 / year * 12);
+    document.getElementById('o-first').textContent = months <= 1 ? 'the first month' : months <= 12 ? 'about ' + months + ' months' : 'about ' + (months / 12).toFixed(1).replace('.0', '') + ' years';
+    document.getElementById('o-five').textContent = Math.floor(year * 5 / 1000);
+  }
+  rp.addEventListener('input', calc); rr.addEventListener('input', calc); calc();
+
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    els.forEach(function (el) { io.observe(el); });
+  } else { els.forEach(function (el) { el.classList.add('in'); }); }
+})();
+</script>
+<!-- Meta Pixel and Statcounter go here before launch. -->
+</body>
+</html>
